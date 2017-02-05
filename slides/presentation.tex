@@ -8,16 +8,22 @@
 %\documentclass[handout]{beamer}
 \usetheme{PD}
 
+\usepackage[utf8]{inputenc}
 \usepackage[absolute,overlay]{textpos}
 \usepackage{helvet}
 \usepackage{tikz}
-\usetikzlibrary{tikzmark,fit}
+\usepackage{listings,lstautogobble}
+\usetikzlibrary{tikzmark,fit,decorations.pathreplacing}
 
-\title{Title}
-\subtitle{\newline Subtitle}
+\title{Spores}
+\subtitle{\newline Closures per la programmazione funzionale distribuita e type-safety}
 \author{Matteo Di Pirro}
-\date{Date...}
-\institute{University of Padova}
+\date{17 Febbraio 2017}
+\institute{Università degli Studi di Padova}
+
+\lstset{
+	autogobble=true
+}
 
 \begin{document}
 
@@ -33,8 +39,11 @@
 	\tableofcontents
 \end{frame}
 
-%\section{title}
-%\input{slideFile}
+\section{Introduzione}
+\input{slides/distributedComputing}
+
+\section{Spore}
+\input{slides/spore}
 
 \appendix
 \makethanks

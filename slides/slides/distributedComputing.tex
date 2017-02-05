@@ -1,0 +1,18 @@
+\begin{frame}[fragile]{Distributed computing?}
+	\begin{itemize}
+		\item Linguaggi funzionali
+	\end{itemize}
+	\begin{lstlisting}[basicstyle=\fontsize{9}{9}\ttfamily]
+	sendFunc :: sendPort (Int -> Int) -> Int -> ProcessM()
+	sendFunc p x = sendChan p (\y -> x + y + 1)
+	\end{lstlisting}
+	\begin{itemize}
+		\item Linguaggi Object-Oriented
+		\begin{itemize}
+			\item Anche il \texttt{this} deve essere serializzato
+		\end{itemize}
+	\end{itemize}
+	\begin{figure}
+		\centering\includegraphics[scale=0.2]{distributed-computing}
+	\end{figure}
+\end{frame}
