@@ -1,0 +1,35 @@
+\begin{frame}{Sintassi}
+	\begin{grammar}
+		<t> ::= \texttt{spore} $\{\overline{x: T = t}$; $\overline{pn}$; (x: T) $\rightarrow$ t$\}$
+		\alt \texttt{import} $pn$ \texttt{in} $t$
+		\alt $t$ \texttt{compose} $t$
+	\end{grammar}	
+	
+	\begin{onlyenv}<2->
+		\begin{grammar}
+			<v> ::= \texttt{spore} $\{\overline{x: T = v}$; $\overline{pn}$; (x: T) $\rightarrow$ t$\}$
+		\end{grammar}
+	\end{onlyenv}
+	
+	\begin{onlyenv}<3->
+		\begin{grammar}
+			<T> ::= $\mathcal{S}$
+			
+			<$\mathcal{S}$> ::= T $\rightarrow$ T \{\texttt{type} $\mathcal{C}$ = $\overline{T}$; $\overline{pn}$\}
+			\alt T $\rightarrow$ T \{\texttt{type} $\mathcal{C}$; $\overline{pn}$\}
+		\end{grammar}
+	\end{onlyenv}
+	
+	\only<4->{
+		$\mathcal{P} \in pn \rightarrow \mathcal{T}$ \\
+		$\mathcal{T} \in \mathcal{P}(T)$
+	}
+	
+	\begin{onlyenv}<5->
+		\begin{grammar}
+			<$\Gamma$> ::= $\overline{x: T}$
+			
+			<$\Delta$> ::= $\overline{pn}$
+		\end{grammar}
+	\end{onlyenv}
+\end{frame}
