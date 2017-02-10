@@ -18,7 +18,7 @@
 \usetikzlibrary{tikzmark,fit,decorations.pathreplacing}
 
 \title{Spores}
-\subtitle{\newline Closures per la programmazione funzionale distribuita e type-safety}
+\subtitle{\newline Closures per la programmazione funzionale distribuita e type-safe}
 \author{Matteo Di Pirro}
 \date{17 Febbraio 2017}
 \institute{Università degli Studi di Padova}
@@ -43,7 +43,9 @@
 	\tableofcontents
 \end{frame}
 
-\section{Introduzione}
+\section{Scenario}
+\input{slides/scenario}
+\input{slides/passaggioDiFunzioni}
 \input{slides/distributedComputing}
 
 \section{Spore}
@@ -51,15 +53,23 @@
 \input{slides/sintassi}
 \input{slides/proprieta}
 
-\section{Typing}
+\section{Formalizzazione}
+\subsection{Typing}
 \input{slides/typing}
 \input{slides/subtyping}
 
-\section{Semantica operazionale}
+\subsection{Semantica operazionale}
+\input{slides/semanticaOperazionale}
+\input{slides/import}
 
-\section{Soundness}
+\subsection{Soundness}
+\input{slides/soundness}
 
-\section{Tipi esclusi}
+\subsection{Tipi esclusi}
+\input{slides/esclusi}
+
+\section{Conclusioni}
+\input{slides/conclusione}
 
 \appendix
 \makethanks
