@@ -1,0 +1,20 @@
+\begin{frame}[fragile]{Problemi a run-time}
+	\begin{lstlisting}
+	class A (file:File) {
+	    private val stream: FileInputStream = // ...
+	
+	    val takeN = spore {
+	        val localStream = stream
+	        (n: Int) => {
+	            val r = new Array[Byte](n)
+	            localStream.read(r)
+	            r
+	        }
+	    }
+	}
+	\end{lstlisting}
+	\begin{itemize}
+		\item Se il file è solo locale?
+		\item Type-class comune a tutti i tipi catturati 
+	\end{itemize}
+\end{frame}
